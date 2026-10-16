@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary-container": "#641e32", "inverse-primary": "#954458", "surface-variant": "#3a3335", "on-primary-container": "#e48599", "background": "#171214", "on-secondary-fixed-variant": "#594234", "on-surface": "#ebe0e2", "tertiary": "#ffb1c0", "on-secondary-fixed": "#29170c", "on-tertiary-container": "#f37a96", "surface-container-highest": "#3a3335", "secondary-fixed": "#fedcc9", "surface-container-high": "#2e282b", "on-background": "#ebe0e2", "secondary-fixed-dim": "#e1c0ae", "surface-tint": "#ffb1c0", "on-surface-variant": "#d9c1c4", "surface-bright": "#3e373a", "primary-fixed": "#ffd9df", "inverse-surface": "#ebe0e2", "surface-container-low": "#201a1c", "on-tertiary-fixed-variant": "#82223e", "primary-fixed-dim": "#ffb1c0", "on-primary": "#5b172b", "on-error": "#690005", "secondary-container": "#594234", "on-error-container": "#ffdad6", "surface-dim": "#171214", "surface-container-lowest": "#120d0f", "error-container": "#93000a", "surface": "#171214", "surface-container": "#241e20", "tertiary-fixed-dim": "#ffb1c0", "inverse-on-surface": "#352f31", "error": "#ffb4ab", "on-tertiary-fixed": "#3f0016", "on-primary-fixed": "#3f0117", "outline": "#a18c8e", "tertiary-container": "#6d102f", "on-primary-fixed-variant": "#782d41", "outline-variant": "#534245", "tertiary-fixed": "#ffd9df", "on-tertiary": "#640729", "on-secondary": "#402c1f", "secondary": "#e1c0ae", "on-secondary-container": "#ceaf9d", "primary": "#ffb1c0" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-lg": "1.75rem", "space-xs": "0.25rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "space-2xl": "5rem", "margin": "3rem", "margin-mobile": "1.25rem", "space-xl": "3rem", "space-md": "1rem", "space-sm": "0.5rem" }, "fontFamily": { "body-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "display": [ "Syne" ], "headline-lg": [ "Syne" ], "label-md": [ "JetBrains Mono" ], "headline-lg-mobile": [ "Syne" ], "display-mobile": [ "Syne" ], "headline-sm": [ "Syne" ], "headline-md": [ "Syne" ], "body-lg": [ "JetBrains Mono" ], "title-md": [ "JetBrains Mono" ] }, "fontSize": { "body-md": [ "0.875rem", { "lineHeight": "1.5rem", "fontWeight": "400" } ], "label-sm": [ "0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.12em", "fontWeight": "500" } ], "display": [ "5.5rem", { "lineHeight": "5.75rem", "letterSpacing": "-0.04em", "fontWeight": "800" } ], "headline-lg": [ "3.5rem", { "lineHeight": "3.75rem", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "label-md": [ "0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.08em", "fontWeight": "500" } ], "headline-lg-mobile": [ "2.25rem", { "lineHeight": "2.5rem", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "display-mobile": [ "3rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "headline-sm": [ "1.25rem", { "lineHeight": "1.5rem", "letterSpacing": "-0.01em", "fontWeight": "600" } ], "headline-md": [ "2rem", { "lineHeight": "2.25rem", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "body-lg": [ "1rem", { "lineHeight": "1.625rem", "fontWeight": "400" } ], "title-md": [ "1.125rem", { "lineHeight": "1.625rem", "letterSpacing": "-0.01em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full px-gutter-mobile md:px-gutter lg:px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Sapna Soni Developer Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VdzXGzfiuf5_X7ccwAVQBEhuNjGxcOgBhO7amiBmQ1Jr9-ApWuCC6l6QCWTIDvVOQyg_d0J6kO3TSgwz_ao7-BDP4f_yEF8aTx3SiOWANeU_7CQGyBPyltqHOxEA2aTXCCKoupB94KQDgA5cKWGx5eclxs1xtBy1oFnLypvOla4U58lXtZwndgCpHtsELPpu_irrHvnc2Y1_Zwcv4OG3XXm2aSaAKXBzglzxQK86a78nzCBKIiHY3MkGAI"/><a class="flex flex-col" data-path="home" href="#"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight uppercase">Sapna Soni</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Full Stack MERN Developer</span></a></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="bg-primary-container text-on-primary-container"><a aria-current="page" class="font-label-md uppercase px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container" data-path="home" href="#">Home</a><a class="font-label-md text-label-md uppercase px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-label-md text-label-md uppercase px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="skills" href="#">Skills</a><a class="font-label-md text-label-md uppercase px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="font-label-md text-label-md uppercase px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav><div class="flex items-center gap-space-md"><a class="hidden sm:inline-flex items-center justify-center bg-primary-container text-on-primary hover:bg-tertiary-container hover:text-on-tertiary font-label-md text-label-md uppercase px-space-md py-space-sm transition-all" data-path="contact" href="#">Let's Talk</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO -->
+<section class="w-full px-gutter-mobile md:px-gutter lg:px-margin pt-12 pb-24" id="home">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left Column -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container/20 text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-space-lg">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+          Full Stack MERN Developer
+        </div>
+<h1 class="font-display text-display-mobile md:text-headline-lg lg:text-display text-on-surface tracking-tight mb-space-md">
+          Building <span class="text-tertiary italic font-serif">Digital Experiences</span> That Make an Impact.
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-space-xl">
+          Hi, I'm Sapna Soni — a passionate Full Stack MERN Developer learning at ExcelPTP. I enjoy transforming ideas into clean, responsive, and functional web applications while continuously exploring new technologies.
+        </p>
+<div class="flex flex-wrap items-center gap-space-md mb-space-xl">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary hover:bg-tertiary-container hover:text-on-tertiary font-label-md text-label-md uppercase px-space-lg py-space-md shadow-xl transition-all" href="#projects">
+            Explore My Work
+          </a>
+<a class="inline-flex items-center justify-center bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-md text-label-md uppercase px-space-lg py-space-md shadow-md transition-all" href="#contact">
+            Let's Connect
+          </a>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">
+            [ STATUS ] Currently learning and building with the MERN stack.
+          </span>
+</div>
+</div>
+<!-- Right Column: Interactive IDE Composition -->
+<div class="lg:col-span-5 relative w-full">
+<div class="absolute -inset-2 bg-gradient-to-r from-primary-container/30 to-tertiary-container/20 rounded-xl blur-xl opacity-50 -z-10"></div>
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-2xl overflow-hidden">
+<!-- IDE Top Bar -->
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-3 rounded-full bg-[#ff5f56]/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#ffbd2e]/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-[#27c93f]/80 inline-block"></span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant px-space-sm py-0.5 rounded bg-surface-container">
+<span class="material-symbols-outlined text-[14px]">code</span>
+              App.jsx
+            </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/60">UTF-8</span>
+</div>
+<!-- Code Content -->
+<div class="p-space-lg font-body-md text-body-md text-on-surface-variant overflow-x-auto leading-relaxed">
+<p><span class="text-tertiary">import</span> React, { useState } <span class="text-tertiary">from</span> <span class="text-secondary">'react'</span>;</p>
+<p><span class="text-tertiary">import</span> { MongoDB, Express, Node } <span class="text-tertiary">from</span> <span class="text-secondary">'@mern/core'</span>;</p>
+<p class="py-space-xs"><span class="text-outline-variant font-label-sm">// Initiate Developer Persona</span></p>
+<p><span class="text-tertiary">export default function</span> <span class="text-on-surface font-semibold">SapnaSoni</span>() {</p>
+<p class="pl-space-md"><span class="text-tertiary">const</span> [state] = useState({</p>
+<p class="pl-space-xl">role: <span class="text-secondary">'Full Stack MERN Developer'</span>,</p>
+<p class="pl-space-xl">focus: <span class="text-secondary">'Scalable Architecture &amp; UI'</span>,</p>
+<p class="pl-space-xl">academy: <span class="text-secondary">'ExcelPTP Professional'</span></p>
+<p class="pl-space-md">});</p>
+<p class="py-space-xs pl-space-md"><span class="text-tertiary">return</span> &lt;<span class="text-tertiary">ImpactCanvas</span> context={state} /&gt;;</p>
+<p>}</p>
+</div>
+<!-- Footer Metadata Bar -->
+<div class="bg-surface-container-low px-space-md py-space-sm flex flex-wrap items-center justify-between gap-space-sm">
+<span class="font-label-sm text-label-sm text-tertiary tracking-widest uppercase">DESIGN. DEVELOP. DEPLOY.</span>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span>MERN</span>
+<span>•</span>
+<span>REST</span>
+<span>•</span>
+<span>FULLSTACK</span>
+</div>
+</div>
+</div>
+<!-- Floating Stack Chip -->
+<div class="hidden sm:flex absolute -bottom-5 -right-4 bg-surface-container-high px-space-md py-space-sm rounded-lg shadow-xl items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[18px]">terminal</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider">MongoDB • Express • React • Node</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: ABOUT ME -->
+<section class="w-full px-gutter-mobile md:px-gutter lg:px-margin py-space-2xl bg-surface-container-lowest" id="about">
+<div class="max-w-4xl mb-space-2xl">
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span>01 // BACKGROUND &amp; VISION</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight mb-space-md">
+        A Little About Me
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+        I'm Sapna Soni, a developer passionate about creating useful, accessible, and visually appealing web experiences. I'm developing my skills at ExcelPTP, where I am learning through practical projects and hands-on coding.
+      </p>
+</div>
+<!-- 3 Editorial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-md hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div>
+<span class="font-display text-headline-md text-tertiary block mb-space-md">01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm">My Approach</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            I believe good development combines thoughtful design, clean code, and a smooth user experience. Crafting reliable front-ends and predictable APIs ensures product longevity.
+          </p>
+</div>
+<div class="pt-space-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">[ USER-CENTRIC CRAFT ]</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-md hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div>
+<span class="font-display text-headline-md text-tertiary block mb-space-md">02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm">My Learning Journey</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            I'm continuously strengthening my frontend and backend development skills by building projects and exploring modern web technologies, modular architectures, and databases.
+          </p>
+</div>
+<div class="pt-space-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">[ CONTINUOUS ACCELERATION ]</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-md hover:bg-surface-container transition-all flex flex-col justify-between group">
+<div>
+<span class="font-display text-headline-md text-tertiary block mb-space-md">03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm">My Goal</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            My goal is to grow into a skilled software developer and contribute to meaningful, real-world products that elevate people's daily digital operations with speed and precision.
+          </p>
+</div>
+<div class="pt-space-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">[ PRODUCTION EXCELLENCE ]</span>
+</div>
+</div>
+</div>
+<div class="mt-space-xl flex justify-start">
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-tertiary uppercase tracking-widest hover:text-on-surface transition-colors" href="#skills">
+<span>More About My Journey</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- SECTION 3: TECHNICAL SKILLS -->
+<section class="w-full px-gutter-mobile md:px-gutter lg:px-margin py-space-2xl" id="skills">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span>02 // CAPABILITIES</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight">
+          Tools I Build With
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Technologies I'm learning and using to develop modern, resilient full-stack web applications with solid foundations.
+      </p>
+</div>
+<!-- 4-Column Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Frontend -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col h-full">
+<div class="flex items-center justify-between mb-space-md">
+<span class="material-symbols-outlined text-tertiary text-[28px]">devices</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">[ FRONTEND ]</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-md">Frontend Development</h3>
+<ul class="flex flex-col gap-space-sm mt-auto">
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            React.js &amp; Hooks
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            JavaScript (ES6+)
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            HTML5 &amp; CSS3
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Bootstrap &amp; Modern Flex
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Responsive Layout Design
+          </li>
+</ul>
+</div>
+<!-- Backend -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col h-full">
+<div class="flex items-center justify-between mb-space-md">
+<span class="material-symbols-outlined text-tertiary text-[28px]">dns</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">[ BACKEND ]</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-md">Backend Development</h3>
+<ul class="flex flex-col gap-space-sm mt-auto">
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Node.js Runtime
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Express.js Framework
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            RESTful API Design
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Middleware &amp; Auth Flow
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Server-side Templates (EJS)
+          </li>
+</ul>
+</div>
+<!-- Database -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col h-full">
+<div class="flex items-center justify-between mb-space-md">
+<span class="material-symbols-outlined text-tertiary text-[28px]">database</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">[ STORAGE ]</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-md">Database Systems</h3>
+<ul class="flex flex-col gap-space-sm mt-auto">
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            MongoDB NoSQL
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Mongoose Schema ODM
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            MySQL Relational DB
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            CRUD Operations
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Data Modeling Principles
+          </li>
+</ul>
+</div>
+<!-- Tools -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-md flex flex-col h-full">
+<div class="flex items-center justify-between mb-space-md">
+<span class="material-symbols-outlined text-tertiary text-[28px]">terminal</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">[ WORKFLOW ]</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-md">Tools &amp; Workflow</h3>
+<ul class="flex flex-col gap-space-sm mt-auto">
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Git &amp; GitHub Version Control
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            VS Code Workspace
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Postman API Client
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Hoppscotch Testing
+          </li>
+<li class="flex items-center gap-space-sm font-body-md text-body-md text-on-surface bg-surface-container px-space-sm py-space-xs rounded">
+<span class="material-symbols-outlined text-tertiary text-[16px]">check_circle</span>
+            Chrome DevTools Diagnostics
+          </li>
+</ul>
+</div>
+</div>
+</section>
+<!-- SECTION 4: FEATURED PROJECTS -->
+<section class="w-full px-gutter-mobile md:px-gutter lg:px-margin py-space-2xl bg-surface-container-lowest" id="projects">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-2xl gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span>03 // PORTFOLIO</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight">
+          Selected Works
+        </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        A collection of projects where ideas meet code. Built with modular component architecture and practical design solutions.
+      </p>
+</div>
+<div class="flex flex-col gap-space-2xl">
+<!-- Project 01: KAIRA -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl bg-surface-container-low rounded-xl overflow-hidden shadow-xl">
+<div class="lg:col-span-5 p-space-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm text-tertiary tracking-widest uppercase">[ REF // 001 ]</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">E-Commerce</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight mb-space-sm">
+              KAIRA E-commerce Website
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+              A responsive fashion-inspired website focused on elegant layouts, product presentation, reusable React components, and responsive styling. Offers fluid transitions, cart state simulation, and minimalist typography.
+            </p>
+<div class="flex flex-wrap gap-space-xs mb-space-xl">
+<span class="bg-surface-container px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface uppercase">React.js</span>
+<span class="bg-surface-container px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface uppercase">Bootstrap</span>
+<span class="bg-surface-container px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface uppercase">CSS Modules</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-md">
+<a class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary hover:bg-tertiary-container hover:text-on-tertiary font-label-md text-label-md uppercase px-space-md py-space-sm shadow-md transition-all" href="#">
+<span>Live Preview</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-surface-container text-on-surface hover:bg-surface-bright font-label-md text-label-md uppercase px-space-md py-space-sm transition-all" href="#">
+<span>View Code</span>
+<span class="material-symbols-outlined text-[16px]">code</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-container relative min-h-[340px] flex items-center justify-center p-space-lg overflow-hidden">
+<img class="w-full h-full object-cover rounded-lg shadow-xl" data-alt="Sophisticated minimalist fashion e-commerce interface mockup displayed inside an architectural frame, rich burgundy and warm ivory tones, sleek editorial apparel photography, clean typography, luxury boutique styling, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtXSwHKkXwBrV13_9hGQipJihTPi5hKxpfakw1n_WUOlZvhLAankcPRcOdO1v9e_7oAC2K1RqlWZ0jdCsAu9XH2xpD3qXumh7odJrx2x92P1m2uolFq1j5oC1Rd3IxaVsnDMZedYlERo6C8elq1PsFtndlKbT2ERK56PhYAKQzqLkG0hN6YBzxIxFmDfm45jaLbBQZSPSAzaD-MYmnBPe936uZfL9qwsNGW8HwYonaXmgg_zKk58i7QQ"/>
+</div>
+</div>
+<!-- Project 02: CRUD Management -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl bg-surface-container-low rounded-xl overflow-hidden shadow-xl">
+<div class="lg:col-span-5 p-space-xl flex flex-col justify-between order-1 lg:order-2">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm text-tertiary tracking-widest uppercase">[ REF // 002 ]</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Web Utility</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight mb-space-sm">
+              CRUD Management Application
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+              A web application concept for managing user information with dynamic form inputs, structured tabular displays, real-time validations, and instantaneous state-driven CRUD interactions.
+            </p>
+<div class="flex flex-wrap gap-space-xs mb-space-xl">
+<span class="bg-surface-container px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface uppercase">React.js</span>
+<span class="bg-surface-container px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface uppercase">JavaScript</span>
+<span class="bg-surface-container px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface uppercase">State Management</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-md">
+<a class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary hover:bg-tertiary-container hover:text-on-tertiary font-label-md text-label-md uppercase px-space-md py-space-sm shadow-md transition-all" href="#">
+<span>Live Preview</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-surface-container text-on-surface hover:bg-surface-bright font-label-md text-label-md uppercase px-space-md py-space-sm transition-all" href="#">
+<span>View Code</span>
+<span class="material-symbols-outlined text-[16px]">code</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-container relative min-h-[340px] flex items-center justify-center p-space-lg overflow-hidden order-2 lg:order-1">
+<img class="w-full h-full object-cover rounded-lg shadow-xl" data-alt="Dark burgundy administrative dashboard UI mockup showcasing data tables, user search queries, active status badges, modal edit controls, pristine monospaced typography, sleek modern interface aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANJ8HFveWEGteDouXpKzG1BL2ztkKBfSD7wPUciFGY0np_TNFFC4Pvgent-T1BxtpPTDCoH3D6KjiNvT_cQEL1vVg62QEnNmixsflqHUG8aL7WxojQgA4VjhW8Z-7Qo7WtDAJ21jU9so7XjfFnRIBEQTttiKE23AXwq-S64SZVdHGHMA3FAv4KZsIcjY5tA1veU0RgAE0-ipcwz7DZkryCqewmSxM_KgVLMfMRavarxfF2Pi7xiB56iw"/>
+</div>
+</div>
+<!-- Project 03: Quora-Style Posts -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl bg-surface-container-low rounded-xl overflow-hidden shadow-xl">
+<div class="lg:col-span-5 p-space-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm text-tertiary tracking-widest uppercase">[ REF // 003 ]</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase">Backend Architecture</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight mb-space-sm">
+              Quora-Style Posts Application
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+              A community post application built to explore robust backend routing, dynamic template rendering, server-side content parsing, and end-to-end CRUD persistence using Express and EJS.
+            </p>
+<div class="flex flex-wrap gap-space-xs mb-space-xl">
+<span class="bg-surface-container px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface uppercase">Node.js</span>
+<span class="bg-surface-container px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface uppercase">Express.js</span>
+<span class="bg-surface-container px-space-sm py-1 rounded font-label-sm text-label-sm text-on-surface uppercase">EJS Templates</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md pt-space-md">
+<a class="inline-flex items-center gap-space-xs bg-primary-container text-on-primary hover:bg-tertiary-container hover:text-on-tertiary font-label-md text-label-md uppercase px-space-md py-space-sm shadow-md transition-all" href="#">
+<span>Live Preview</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+<a class="inline-flex items-center gap-space-xs bg-surface-container text-on-surface hover:bg-surface-bright font-label-md text-label-md uppercase px-space-md py-space-sm transition-all" href="#">
+<span>View Code</span>
+<span class="material-symbols-outlined text-[16px]">code</span>
+</a>
+</div>
+</div>
+<div class="lg:col-span-7 bg-surface-container relative min-h-[340px] flex items-center justify-center p-space-lg overflow-hidden">
+<img class="w-full h-full object-cover rounded-lg shadow-xl" data-alt="Community forum feed UI mockup on dark burgundy background with thread comments, upvote chips, user badges, clean monospaced layout, content timeline, editorial developer publication vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJlUN0hlrMNx7IY4p-IRxCdVL6_h7RODkgG2ajMyPwsekn3Sxojc5s3v8gkWV9bWUj7aAkNtWkDq-tP-v1PN399DUVpCUP2EneMx9dipqZOdeKs9UFRUF0JBiDUxTliAh6pT7W67DnRhwUDOOoEGhg7bm7pV5hiEqp4PE1emI8JWNWg213yKe-V7Fush_UXFcq4-K12sJoXO6mKwI8jl2MTK3J-OjvaC1HXE6SnAakQ7aWWrb8b8yT5A"/>
+</div>
+</div>
+</div>
+<!-- Bottom CTA -->
+<div class="mt-space-2xl text-center">
+<a class="inline-flex items-center gap-space-sm bg-surface-container-high text-on-surface hover:bg-surface-bright font-label-md text-label-md uppercase px-space-xl py-space-md rounded-md shadow-md transition-all" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span>View All Projects On GitHub</span>
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+</a>
+</div>
+</section>
+<!-- SECTION 5: DEVELOPMENT PROCESS -->
+<section class="w-full px-gutter-mobile md:px-gutter lg:px-margin py-space-2xl">
+<div class="max-w-3xl mb-space-2xl">
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span>04 // METHODOLOGY</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight mb-space-sm">
+        From Idea to Interface
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        A structured, disciplined engineering workflow centered on architectural clarity, iterative feedback, and code performance.
+      </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-space-lg text-tertiary">
+<span class="material-symbols-outlined text-[24px]">explore</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-space-xs">STAGE 01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm">Understand</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Analyze the core problem statement, identify key user workflows, establish data structures, and scope requirements before writing any code.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md">
+<span class="font-label-sm text-label-sm text-outline tracking-wider">[ PROBLEM_DECOMPOSITION ]</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-space-lg text-tertiary">
+<span class="material-symbols-outlined text-[24px]">code_blocks</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-space-xs">STAGE 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm">Build</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Develop modular, responsive user interfaces and connect them to sturdy backend services, establishing clean REST contracts and robust schemas.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md">
+<span class="font-label-sm text-label-sm text-outline tracking-wider">[ MODULAR_IMPLEMENTATION ]</span>
+</div>
+</div>
+<div class="bg-surface-container-low p-space-xl rounded-xl shadow-md flex flex-col justify-between relative overflow-hidden">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center mb-space-lg text-tertiary">
+<span class="material-symbols-outlined text-[24px]">auto_fix_high</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-space-xs">STAGE 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-sm">Refine</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Test edge cases, audit responsive viewports, remove redundant queries, polish interactive animations, and ensure cross-browser stability.
+          </p>
+</div>
+<div class="mt-space-lg pt-space-md">
+<span class="font-label-sm text-label-sm text-outline tracking-wider">[ QUALITY_VERIFICATION ]</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: LEARNING JOURNEY SPLIT -->
+<section class="w-full px-gutter-mobile md:px-gutter lg:px-margin py-space-2xl bg-surface-container-lowest">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left side: Deep Burgundy Hero Card -->
+<div class="lg:col-span-7 bg-primary-container p-space-2xl rounded-2xl shadow-xl flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-widest block mb-space-md">
+            [ PERSISTENT EXPLORATION ]
+          </span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface tracking-tight mb-space-lg">
+            Always Learning. Always Building.
+          </h2>
+<h3 class="font-headline-sm text-headline-sm text-on-primary-container uppercase tracking-tight mb-space-md">
+            Curiosity, Consistent Practice, Real Projects.
+          </h3>
+<p class="font-body-lg text-body-lg text-on-surface/90 leading-relaxed mb-space-lg">
+            My journey as a developer is built around curiosity, consistent practice, and real projects. At ExcelPTP, I'm strengthening my development fundamentals and exploring how frontend interfaces, backend services, and databases work together into unified systems.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-md">
+<span class="font-label-sm text-label-sm text-secondary-fixed tracking-wider">ACADEMY: EXCELPTP // PRACTICAL_EXP</span>
+</div>
+</div>
+<!-- Right side: Highlights & Values -->
+<div class="lg:col-span-5 bg-surface-container-low p-space-xl rounded-2xl shadow-xl flex flex-col justify-center gap-space-md">
+<div class="bg-surface-container p-space-lg rounded-xl flex items-start gap-space-md">
+<div class="p-space-xs rounded bg-primary-container text-tertiary">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface uppercase tracking-tight mb-1">Learning by Building</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Translating abstract programming theory into practical software prototypes and production builds.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl flex items-start gap-space-md">
+<div class="p-space-xs rounded bg-primary-container text-tertiary">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface uppercase tracking-tight mb-1">Exploring the MERN Stack</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Deep diving into component lifecycle, API middleware, and MongoDB document relationships.
+            </p>
+</div>
+</div>
+<div class="bg-surface-container p-space-lg rounded-xl flex items-start gap-space-md">
+<div class="p-space-xs rounded bg-primary-container text-tertiary">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div>
+<h4 class="font-title-md text-title-md text-on-surface uppercase tracking-tight mb-1">Growing Through Projects</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Embracing debugging challenges and expanding developer intuition through regular deployment cycles.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 7: CONTACT -->
+<section class="w-full px-gutter-mobile md:px-gutter lg:px-margin py-space-2xl" id="contact">
+<div class="max-w-3xl mb-space-2xl">
+<div class="flex items-center gap-space-xs text-tertiary font-label-sm text-label-sm uppercase tracking-widest mb-space-xs">
+<span>05 // INITIATE DIALOGUE</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface uppercase tracking-tight mb-space-sm">
+        Have an Idea? Let's Build It.
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+        I'm always interested in connecting with people who enjoy technology, creative problem-solving, and building useful digital experiences.
+      </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+<!-- Left Column: Information -->
+<div class="lg:col-span-5 flex flex-col justify-between bg-surface-container-low p-space-xl rounded-xl shadow-lg">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight mb-space-md">
+            Direct Coordinates
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-xl">
+            Currently open for internship roles, junior web developer positions, and open-source collaborations.
+          </p>
+<div class="flex flex-col gap-space-md">
+<a class="flex items-center gap-space-md p-space-md bg-surface-container rounded-lg hover:bg-surface-bright transition-all group" href="mailto:hello@sapnasoni.dev">
+<span class="material-symbols-outlined text-tertiary text-[20px]">alternate_email</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Email Address</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">hello@sapnasoni.dev</span>
+</div>
+</a>
+<a class="flex items-center gap-space-md p-space-md bg-surface-container rounded-lg hover:bg-surface-bright transition-all group" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-tertiary text-[20px]">link</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Professional Network</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">linkedin.com/in/sapnasoni</span>
+</div>
+</a>
+<a class="flex items-center gap-space-md p-space-md bg-surface-container rounded-lg hover:bg-surface-bright transition-all group" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-tertiary text-[20px]">code</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Code Repository</span>
+<span class="font-body-md text-body-md text-on-surface font-medium">github.com/sapnasoni</span>
+</div>
+</a>
+</div>
+</div>
+<div class="mt-space-xl pt-space-lg bg-surface-container/50 p-space-md rounded-lg">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest block mb-1">[ NOTICE ]</span>
+<p class="font-label-sm text-label-sm text-on-surface-variant">
+            Usually responds within 24 hours. Ready to dive into active codebases and learn fast.
+          </p>
+</div>
+</div>
+<!-- Right Column: Interactive Form -->
+<div class="lg:col-span-7 bg-surface-container-low p-space-xl rounded-xl shadow-lg">
+<form class="flex flex-col gap-space-lg" id="contact-form" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden'); this.reset();">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase" for="name">Your Name</label>
+<input class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:bg-surface-bright outline-none transition-all" id="name" placeholder="Alex Turner" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase" for="email">Your Email</label>
+<input class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:bg-surface-bright outline-none transition-all" id="email" placeholder="alex@company.com" required="" type="email"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase" for="subject">Subject</label>
+<input class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:bg-surface-bright outline-none transition-all" id="subject" placeholder="Discussion: Junior Dev Role / Project Inquiry" required="" type="text"/>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase" for="message">Your Message</label>
+<textarea class="w-full bg-surface-container text-on-surface px-space-md py-space-sm rounded font-body-md text-body-md focus:bg-surface-bright outline-none resize-none transition-all" id="message" placeholder="Tell me about your product requirements or hiring details..." required="" rows="5"></textarea>
+</div>
+<div class="hidden p-space-md bg-primary-container text-on-primary rounded font-label-sm text-label-sm uppercase tracking-wider" id="form-feedback">
+            ✓ Message transmitted successfully. Thank you for reaching out!
+          </div>
+<button class="inline-flex items-center justify-center gap-space-xs bg-primary-container text-on-primary hover:bg-tertiary-container hover:text-on-tertiary font-label-md text-label-md uppercase px-space-xl py-space-md rounded shadow-xl transition-all self-start" type="submit">
+<span>Send Message</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple navigation smoothness for hash links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId && targetId !== '#') {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
+</script></main><footer class="w-full bg-primary-container py-space-2xl"><div class="w-full px-gutter-mobile md:px-gutter lg:px-margin flex flex-col gap-space-xl"><div class="flex flex-col md:flex-row md:items-end justify-between gap-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">Sapna Soni</span><p class="font-title-md text-title-md text-on-primary-container">Thoughtfully designed. Carefully developed.</p></div><nav class="flex flex-wrap items-center gap-space-md" data-active-classes="text-on-surface font-bold"><a aria-current="page" class="uppercase transition-colors text-on-surface font-bold" data-path="home" href="#">Home</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="about" href="#">About</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="skills" href="#">Skills</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="projects" href="#">Projects</a><a class="font-label-md text-label-md uppercase text-on-surface-variant hover:text-on-surface transition-colors" data-path="contact" href="#">Contact</a></nav></div><div class="flex flex-col md:flex-row items-center justify-between gap-space-md pt-space-lg"><p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">© 2024 Sapna Soni. All rights reserved.</p><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank">GitHub</a><a class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hover:text-on-surface transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">LinkedIn</a></div></div></div></footer></body></html>
